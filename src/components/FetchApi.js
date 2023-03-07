@@ -10,7 +10,7 @@ const [inputs,setInputs] = useState({})
 const onClickHandler =(e)=>{
   // getting the number entered by user and then displaying the output 
 var num = document.querySelector('input').value;
-  fetch(`http://jsonplaceholder.typicode.com/posts/${num}`)
+  fetch(`https://jsonplaceholder.typicode.com/posts/${num}`)
   .then((response) => response.json())
   .then((json) => {
     console.log(json)
