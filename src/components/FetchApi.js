@@ -31,7 +31,7 @@ const handleSubmit=(e)=>{
   console.log(inputs)
   render(
     <div>
-      <p>Your name is: {inputs.title}</p>
+      <p> Your name is: {inputs.title}</p>
     </div>
   )
 }
@@ -54,9 +54,9 @@ const handleSubmit=(e)=>{
 
       {/* form to create */}
       <form onSubmit={handleSubmit}>
-        <input type="text" name='title' onChange={handleChange} />
-        <input type="text" name='body' onChange={handleChange} />
-        <input type="text" name='userId' onChange={handleChange} />
+        <input type="text" name='title' placeholder='enter title' onChange={handleChange} />
+        <input type="text" name='body' placeholder='enter message' onChange={handleChange} />
+        <input type="text" name='userId' placeholder='enter id' onChange={handleChange} />
         <input type="submit" value={'submit'} onChange={handleChange} />
       </form>
          
